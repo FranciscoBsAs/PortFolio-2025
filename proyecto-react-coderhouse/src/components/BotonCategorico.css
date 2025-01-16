@@ -1,0 +1,15 @@
+.BotonCategorico{
+    position: relative;
+    color:  rgb(242, 238, 220);
+    background-color:rgb(89, 58, 27);
+    font-family: georgia, serif;
+    font-weight: bold;
+    font-size:17px;
+    top: 50px;
+    margin-right: 10px;
+    right: 150px;
+    border-width: 2px;
+    border-color:rgb(242, 238, 220);
+    border-bottom: 5%;
+    width: 140px;
+}

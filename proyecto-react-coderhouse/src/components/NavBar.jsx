@@ -1,6 +1,8 @@
 //import imagenLogo from '../../src/images/coffee-house-logo.png'
 //import '../App.css'
 import './navBar.css'
+import './BotonCategorico.css'
+import './CartWidget.css'
 import BotonCategorias from './Button.jsx'
 import CartWidget from './CartWidget.jsx'
 
