@@ -6,7 +6,6 @@ function ItemListContainer() {
             <div>
                 <h2>Listado de productos</h2>
                 <Productos nameProducto="Algo"></Productos>
-                <Productos nameProducto="esto"></Productos>  
             </div>
         </>
     )
