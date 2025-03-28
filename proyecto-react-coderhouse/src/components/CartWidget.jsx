@@ -1,4 +1,4 @@
-import './NavBar.css'
+import './BarNav.css'
 import { CartContextCreated } from '../Contexts/CartProvider'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom';
