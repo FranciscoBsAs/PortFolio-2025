@@ -1,0 +1,61 @@
+.Item-List-Container{ 
+margin: 0px;
+
+bottom: 0px;
+top: 10px; 
+position:relative;
+
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre los artículos */
+
+
+
+
+    border: 1px solid;
+    padding:20px;
+    background-color: rgb(242, 238, 220);
+    border-radius: 80px;
+    border-width: 10px;
+    border-color: rgb(89, 58, 27);
+        box-sizing: border-box;
+    display: block;
+}
+.div-container{
+    position:relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre los artículos */
+    top: 100px;
+}
+
+.gretting-style{
+background-color: rgb(228, 218, 175);
+position: relative;
+text-align: center;
+top: 120px;
+border-radius: 10px;
+margin-bottom: 0px;
+margin-top: 0px;
+width: 100%; /* Asegura que ocupe toda la fila */
+display: block; /* Asegura que no se vea como un elemento inline */
+}
+
+.dynamic-category{
+        background-color: darkolivegreen;
+        color: peru;
+        font-family: "Freight Sans", "Helvetica Neue", Arial, sans-serif;
+        position: relative;
+        text-align: center;
+        top: 125px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 50%; /* Asegura que ocupe toda la fila */
+        display: block; /* Asegura que no se vea como un elemento inline */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 80px;
+        margin: 0 auto;
+        
+}
+

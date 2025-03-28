@@ -1,4 +1,4 @@
-function BotonCategorias(props) {
+function ButtonCategory(props) {
     return(
         <>
             <button className="BotonCategorico">
@@ -8,4 +8,4 @@ function BotonCategorias(props) {
     )
 }
 
-export default BotonCategorias
+export default ButtonCategory

@@ -2,7 +2,7 @@
     position: relative;
     height: 150px; 
     width: 150px; 
-    margin-right: 5px;
+    margin-right: 0px;
     bottom: 50px;
 }
 .titulo{
@@ -13,51 +13,23 @@
     padding: 0px;
     bottom: 50px;
 }
-/* .BotonCategorico{
-    position: relative;
-    color:  rgb(242, 238, 220);
-    background-color:rgb(89, 58, 27);
-    font-family: georgia, serif;
-    font-weight: bold;
-    font-size:17px;
-    top: 50px;
-    margin-right: 10px;
-    right: 150px;
-    border-width: 2px;
-    border-color:rgb(242, 238, 220);
-    border-bottom: 5%;
-    width: 140px;
-} */
-
-/*
-.conten{
-    width: 10px;
-    right: 70px;
-    display: flex;
+.Nav-Bar-Style{
+    background: darkolivegreen;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:92%;
+    height:50px;
+    padding:50px;
+    display:flex
+}
+.img-home{
+    position:relative;
+    padding: 1px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 0px;
+    bottom: 25px;
+    right: 6px;
 }
 
-.notification-bubble{
-    position: relative;
-    background: rgb(242, 238, 220);
-    color: darkgreen;
-    font-size: 14px;
-    font-family: georgia, serif;
-    height: 60px;
-    width: 60px;
-    font-weight: bold;
-    margin-right: 3px;
-    text-align: left;
-    border: 5px solid #a0522d;
-    border-radius: 50px 80px 50px 80px;
-    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.2); 
-}
-.imgCarrito{
-    position: relative;
-    padding: 0px;
-    width: 50px;
-    height: 90px;
-    margin-bottom: 30px;
-    bottom: 5px;
-    right: 5px;
-}
-*/

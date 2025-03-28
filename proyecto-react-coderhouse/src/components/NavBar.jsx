@@ -1,42 +1,80 @@
-//import imagenLogo from '../../src/images/coffee-house-logo.png'
-//import '../App.css'
-import './navBar.css'
+import './NavBar.css'
 import './BotonCategorico.css'
 import './CartWidget.css'
-import BotonCategorias from './Button.jsx'
+import ButtonCategory from './ButtonCategory.jsx'
 import CartWidget from './CartWidget.jsx'
+import { Link } from 'react-router-dom'
+import productsArray from '../assets/asyinckMockGetters'
 
-function BarraNav() {
+function getSpecificCategories() {
+    const mapCategory = productsArray.map(specificProduct => specificProduct.category)
+    return [...new Set(mapCategory)];
+                                            //const uniqueCategories = categories.filter((category, index, self) => self.indexOf(category) === index);
+  };
+
+
+function NavBar() {
+    const specificCategory = getSpecificCategories()
     return(
-    
-        <nav style={
-            { 
-                position: "fixed",
-                top:0, 
-                left:0,
-                width:"100%",
-                height:"50px",
-                padding:"50px",
-                //justifyContent: "space-between",
-                background: "darkolivegreen",
-                display:'flex'
-
-            }
-        }>  
-            <img className='imgLogo'  src="../../src/images/coffee-house-logo.png" alt="este es el logo"></img>
+        <nav className='Nav-Bar-Style'>  
+            <Link to='/'>
+                <img className='img-home' src="/images/home.png"></img>
+            </Link>
+            <Link to='/'>
+                <img className='imgLogo'  src="/images/coffee-house-logo.png" alt="este es el logo"></img>
+            </Link> 
+            
             <h1 className='titulo'>Coffee House</h1>
 
-            <BotonCategorias txt="Cafés"/>
-            <BotonCategorias txt="Tés"/>
-            <BotonCategorias txt="Postres"/>
-            <BotonCategorias txt="Sándwiches"/>
-
-            <CartWidget></CartWidget>
+            {specificCategory.map((categ, catIndex)=>(
+                <Link key={catIndex} to={`/categories/${encodeURIComponent(categ)}`}>
+                    <ButtonCategory txt={categ}/>
+                </Link>
+            ))}
+            
+                <CartWidget></CartWidget>
+            
 
         
         </nav>
         
     )
 }
+export default NavBar
 
-export default BarraNav
+{/*
+    function NavBar() {
+    return(
+    
+        <nav className='Nav-Bar-Style'>  
+            <Link to='/'>
+                <img className='imgLogo'  src="../../src/images/coffee-house-logo.png" alt="este es el logo"></img>
+            </Link>
+            <h1 className='titulo'>Coffee House</h1>
+            <Link to='/categories/Cafés'>
+                <ButtonCategory txt="Cafés"/>
+            </Link>
+                                    {/* OJO CON LOS TILDES!!  EN LAS URLS DE LINK el escrito tiene que coincidir con el valor del atributo category del productsArray[] 
+
+                                    <Link to='/categories/Tés'>
+                                    <ButtonCategory txt="Tés"/>
+                                </Link>
+                    
+                                <Link to='/categories/Postres'>
+                                    <ButtonCategory txt="Postres"/>
+                                </Link>
+                    
+                                <Link to='/categories/Sándwiches'>
+                                    <ButtonCategory txt="Sándwiches"/>
+                                </Link>
+                    
+                                <CartWidget></CartWidget>
+                    
+                            
+                            </nav>
+                            
+                        )
+                    }
+                    
+                    export default NavBar
+*/}

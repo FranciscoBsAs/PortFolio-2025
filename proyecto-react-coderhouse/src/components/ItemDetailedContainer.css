@@ -1,0 +1,66 @@
+/*
+.Item-Detail-Container{
+    margin: 0px;
+bottom: 0px;
+top: 160px; 
+position:relative;
+    border: 1px solid;
+    padding:30px;
+    background-color: rgb(242, 238, 220);
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: rgb(89, 58, 27);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+}
+.some{
+    display: list-item;
+
+}
+
+*/
+
+.Item-Detail-Container {
+    margin: 0px auto;
+    position: relative;
+    top: 130px;
+    /*bottom: 90px; */
+    width: 780px;
+    padding: 10px;
+    background-color: rgb(242, 238, 220);
+    border-radius: 20px;
+    border: 10px solid rgb(89, 58, 27);
+
+    display: flex;
+    flex-direction: column; /* Para que el encabezado quede arriba */
+    align-items: center; /* Centrar el encabezado */
+}
+
+/* Encabezado centrado */
+.header-detail {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Contenedor de la imagen y la descripción */
+.content-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Espacio entre imagen y texto */
+}
+
+/* Imagen centrada a la izquierda */
+.img-detail {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+/* Texto a la derecha de la imagen */
+.text-detail {
+    max-width: 500px;
+}

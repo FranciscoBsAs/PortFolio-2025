@@ -1,0 +1,30 @@
+.img-product {
+    width: 250px; 
+    height: 250px;
+    object-fit: cover; /* Para mantener la proporción sin deformar */
+    border-radius: 50px; /* Opcional, para bordes redondeados */
+}
+
+.especialidad{
+    background: linear-gradient(to bottom, #FFFFFF 50%, #00A650 50%);
+    color:  #f90740;
+    border-radius: 50px
+
+}
+
+.btn-detail{
+    padding: 5px 15px; /* Tamaño del botón */
+    font-size: 20px; /* Tamaño del texto */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    /*transition: background 0.3s ease; /* Efecto suave */
+    background-color: darkolivegreen;
+    /*color:rgb(242, 238, 220); */
+    
+}
+.vertical-separator {
+    border-left: 1px solid #000; /* Borde vertical */
+    height: 20px; /* Altura del separador */
+    margin: 0 10px; /* Espacio alrededor del separador */
+}
