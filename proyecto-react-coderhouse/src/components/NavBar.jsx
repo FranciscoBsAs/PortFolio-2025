@@ -26,7 +26,7 @@ function NavBar() {
             
             <h1 className='titulo'>Coffee House</h1>
 
-            {specificCategory.map((categ, catIndex)=>(
+            {specificCategory.map( (categ, catIndex) => (
                 <Link key={catIndex} to={`/categories/${encodeURIComponent(categ)}`}>
                     <ButtonCategory txt={categ}/>
                 </Link>
