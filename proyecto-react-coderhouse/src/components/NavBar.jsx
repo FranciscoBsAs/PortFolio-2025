@@ -1,6 +1,6 @@
 import './BotonCategorico.css'
 import './CartWidget.css'
-import './NavBar.css'
+import './BarNav.css'
 import ButtonCategory from './ButtonCategory.jsx'
 import CartWidget from './CartWidget.jsx'
 import { Link } from 'react-router-dom'
