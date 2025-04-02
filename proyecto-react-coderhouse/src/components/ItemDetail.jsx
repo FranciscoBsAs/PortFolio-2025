@@ -41,12 +41,11 @@ function ItemDetail() {
                     </div>
                     <br />
                     <div>
-                        <ItemCount productNameAlert={detailed?.name} productToCartProp={detailed} />
+                        <ItemCount productNameAlert={ detailed?.name } productToCartProp={detailed} />
                     </div>
                 </article>
             )}
         </>
     );
 }
-
 export default memo(ItemDetail);
