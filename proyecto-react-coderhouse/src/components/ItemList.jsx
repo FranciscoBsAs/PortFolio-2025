@@ -15,7 +15,7 @@ function ItemList(props) {
     return(
         <>
         <article > 
-            <h2>{ props.productListed.name  }</h2>
+            <h2 className='color-product-name' >{ props.productListed.name  }</h2>
             <img src={ props.productListed.image } className='img-product' alt={ props.productListed.name } ></img>
             <h2 className='especialidad'>{ props.productListed.especialidad }</h2>
             <h3> $ {props.productListed.price} </h3>

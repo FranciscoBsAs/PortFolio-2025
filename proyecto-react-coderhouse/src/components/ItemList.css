@@ -28,3 +28,6 @@
     height: 20px; /* Altura del separador */
     margin: 0 10px; /* Espacio alrededor del separador */
 }
+.color-product-name{
+    color: rgb(41, 69, 69);
+}

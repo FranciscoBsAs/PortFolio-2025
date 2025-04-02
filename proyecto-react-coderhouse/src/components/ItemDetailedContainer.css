@@ -37,6 +37,7 @@ position:relative;
     display: flex;
     flex-direction: column; /* Para que el encabezado quede arriba */
     align-items: center; /* Centrar el encabezado */
+    color:  rgb(41, 69, 69);;
 }
 
 /* Encabezado centrado */
