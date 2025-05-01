@@ -29,8 +29,9 @@ export default function CartProvider( {children} ){
                 }
     
                 return( 
-                    prevCartContent.map((itemIterator3) =>
-                    itemIterator3.id === newItem.id ? { ...itemIterator3, quantity: updatedQuantity } : itemIterator3
+                    prevCartContent.map( (itemIterator3) => itemIterator3.id === newItem.id
+                      ? { ...itemIterator3, quantity: updatedQuantity }
+                      : itemIterator3
                     )
                 )
             } else {

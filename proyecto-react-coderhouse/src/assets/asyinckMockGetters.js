@@ -58,6 +58,8 @@ const productsArray = [
 
   ];
   
+/*
+
 export function getProducts() {
     return (
         new Promise((resolve, reject)=>{
@@ -86,5 +88,8 @@ export function getCategoryOfProduct(theCategory) {
         }, 500 )
     })
 }
+
+
+*/
 
 export default productsArray
